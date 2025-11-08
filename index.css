@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #003153;
+}
+.container {
+    background-image: linear-gradient(#242423,#262525,#000000);
+    max-width: 30rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+h1 {
+    color: white;
+}
+p {
+    color: gainsboro;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.star {
+    background-color: dimgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+.numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly  ;
+    align-items: center;
+}
+.numbers .numg-design {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: background-color 0.5s;
+}
+.numbers .numg-design:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.numbers .numg-design.active {
+  background-color: orange;
+  color: black;
+}
+.submit-button {
+    width: 100%;
+    background-color: orange;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    transition: background-color 0.5s;
+}
+.submit-button:hover {
+    background-color: whitesmoke;
+}
+.thank-you-container { 
+    background-image: linear-gradient(#242423,#262525,#000000);
+    max-width: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    display:none;
+}
+button {
+    padding: 0.5rem;
+    color: orange;
+    background-color: gray;
+    border-radius: 1rem;
+}
